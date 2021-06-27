@@ -1,0 +1,110 @@
+[2:48 p. m., 13/2/2021] 😊: La etiqueta <header> se divide en con la etiqueta <div> según corresponda, conteniendo etiquetas de parrafo <p> y de contenidos pequeños<span>
+[2:52 p. m., 13/2/2021] 😊: Se agregan algunas etiquetas <a href=""> en las que se designa un archivo al que se dirigirá el usuario al hacer clic sobre el texto predilecto
+[3:12 p. m., 13/2/2021] 😊: la etiqueta <section> contiene una imagen <img> especificando su ubicación con el atributo scrc="", además de una división que contiene un pequeño texto
+[3:00 p. m., 15/2/2021] 😊: Con la etiqueta main designamos un espacio para brindar información, dividiéndolo en secciones con la etiqueta <section> y esta a su vez con la etiqueta <div>. Agregamos título a las secciones con lanetiqueta <h2> o <h3> según corresponda y agregamos nuestro texto con la etiqueta <p>.
+[3:04 p. m., 15/2/2021] 😊: Agregamos imágenes por medio de la etiqueta <img> ayudado de su atributo scr=""
+dentro de la etiqueta seccion agregamos una division con la etiqueta <div> donde agregamso un titulo ayudados de la etiqueta h2 y un texto con la etiqueta <p>.
+dentro de la siguiete etiqueta <div> agregamos un titulo con la etiqueta h2, posterirmente hacemos 3 diviciones con la etiqueta <div> en la cual, cada una, contendra un titulo especificado con la etiqueta h3, una imagen contenida en <img src=""> y un pequeño texto<p>.
+dento de nuestro pie de pagina<footer> agrgamos un div que nuevamente dividiremos en 3 apartados con la misma etiqueta <div> en la que, cada una, contendra un titulo definido con la etiquta h2 y un pequeño texto con la etiqueta <p>, ademas fuera de estos 3 apartados agregamos nuevamente un texto con la etiqueta <p>
+agregamos un una etiqueta <script crs=""> en la que contendra un documento .js que ayuda en el menu, cuando al momento de hacer la pantalla utiliza dimenciones mas pequeñas se vuelve un boton de menu y al hacer clic sobre el icono desliza un menu de opciones
+
+nosotros
+dentro d ela etiqueta <maain> agregamos 3 etiquetas <section>, en la primera agregaremos un division<div> en la que contendra un titulo<h2> y un pequeño parrafo<p>
+dentro de la segunda etiqueta <section> agregaremos una division<div> que contendra dos divisiones mas dentro de si, dentro de la primera de estas contendra solamente una image<img crs=""> y dentro de la segunda un titulo<h2>, un pequeo parrafo<p> y un boton que nos dirige al apartado de contacto con la etiqueta <a href="">
+dentode la tercera y ultima seccion agregamos un titulo<h2> y una division<div> a su vez dividida en 4, en las cules, cada una, contendra dos divisiones mas<div> y una imagen<img crs="">
+
+
+css
+se realiza una improtacion de los tipos de fuentes desde la pagina especificada por la url
+*-----
+body se le agrega un tipo de fuente con font-mamily y un margen con margin
+img el contenido detro de esta etiqueta se define como un bloque con la etiqueta display, definiendo de igual manera el ancho(width) y el ancho maximo con max-width
+se define un margen para las etiquetas h1,h2,h3 y h4 con margin
+aquellas etiqueta con el atributo class="contenedor" se les es asignado un ancho(width) y un margen(margin)
+a las etiquetas con el atributo class="contenedor-flexible" se les define como un contenedor flexible...como se alinean los elementos con la aling-items
+a las etiquetas con el atributo class="column" se les designa un ancho con width
+las etiquetas que contengan el atributo class="main-header" se les asigna un tamaño de ancho(width)
+a las etiquetas con el atribuuto class="logo" se les asigna un tamaño de fuente mediante font-size, un color(color), un espacio de relleno con padding, un tipo de fuente(font-family) y un grosor con font-weight
+las etiquetas que contengan el atributo class="main-header__contactInfo_telefono" se les asigna un fondo, un margen(margin), un margen superior(margin-top) y un espacio de relleno con padding
+a las etiquetas con el atributo clas="main-header__contactInfo_direccion" se le asigna un espacio de relleno con paddingy un margen(margin)
+las etiquetas con el atributo class="main-header" y que sean elementos class="icon-" especifica como estan posisiconados los elementos mediante position, top para el desplazamiento superior desde el margen superior y right para el desplazamiento derecho desde el margen
+a las etiquetas que contengan el atributo class="main-nav" se le asigana un ancho(width), el posicionamiento de los elementos mediante position, z-index para le orden del posicionamiento y un espacio de relleno con padding
+las etiquetas con el atributo class="icon-menu" se les designa como elementos de bloque, un color con color, un borde(border), se redondean las esquinas del borde con border-radius, se asigna un ancho(width), alto(height), se establece la altura de la casilla  line-height, la alineacion del texto(tex-aling), el tipo de cursor(cursor) y tamaño de fuente(font-size)
+a las etiquetas que contengan el atributo class="sociales-icon" se definen como un contenedor flexible, define cómo el navegador distribuye el espacio entre y alrededor de los elementos con justify-content
+las etiquetas con el atributo class="sociales-icon" y que sean elementos class="icon-" se les asigna el color(color), un margen derecho (margin-left), se define como un elemento flexible(display), define cómo el navegador distribuye el espacio entre y alrededor de los elementos con justify-content, se alineanlos elementos(aling-items), se define un tamaño de fuente(font-size), se designa un ancho width, un alto(height), un color de fondo y redondes al borde(border-radius)
+a las etiquetas que contengan el atributo class="sociales-icon__link" se les quita el subrayado con text-decoration
+las etiquetas con el atributo class="menu" se asigna el posicionamiento de los elementos mediante position, top para el desplazamiento superior desde el margen superior y left para el desplazamiento izquierdo desde el margen, un ancho(width), un color de fondo(background), espacio de relleno(padding), margen(margin), estilo de lista(list-style), alineacion del texto (text-aling), alto (height), el contenido es recortado y no se muestran barras de posición(overflow) y transicion(transition)
+a las etiquetas que contengan el atributo class="menu__link" se definen coomo elementos de bloque, se elimina el subrayado con text-decoration, se agrga un espacio de relleno con padding y un color con color
+a las etiquetas que contengan el atributo class="menu__link" se agrega un color de fondo(background) al momento de posicionar el cusror sobre el elemento
+a las etiquetas que contengan el atributo class="menu__link_select" se le agrega un color de fondo background
+las etiquetas con el atributo class="mostrar" se les asigna un alto(height)
+a las etiquetas que contengan el atributo class="banner" se les asigana un margen superior con margin-top y especifica como estan posisiconados los elementos mediante position
+las etiquetas con el atributo class="baner" y sean hijos de este se les especifica como estan posisiconados los elementos mediante position, se les agrega un ancho(width), alto(height), un color de fondo(background) y el desplazamiento del elemento desde el margen superior(top)
+a las etiquetas que contengan el atributo class="banner_img" se les asigna un ancho(width), alto(height), el bjeto se ajusta en relacion al aspecto de la caja con object-fit
+las etiquetas que contengan el atributo class="banner_contenido" se les agrega un ancho(width), color(color), alineacion del texto(text-align), se les especifica como estan posisiconados los elementos mediante position, z-index para le orden del posicionamiento, top para el desplazamiento superior desde el margen superior y left para el desplazamiento izquierdo desde el margen, se agregan coordenadas del elemento mediante transform, tamaño de fuente(font-size) y grosor del texto(font-weight)
+a las etiquetas que contengan el atributo class="contenedor" o ""group--color" se les asigna un color de fondo(background), un color(color), se le asigna un espacio de relleno con padding, alineacion del texto(text aling)
+las etiquetas con el atributo class="main_titulo" se les asigna un margen(margin), tamaño de fuente(font-size), tipo de fuente(font-family) y grosor del texto(font-weight)
+a las etiquetas que contengan el atributo class="column_title" se les asigna un tamaño de letra con font-size
+a las etiquetas que contengan el atributo class="main_descripcion" o  "column:nth-child(2)" se alinea el texto con text-align
+las etiquetas con el atributo class="btn" se les desigan como elementos de bloque mediante display, se les elimina el subrayado con text-decoration, se le asigna un color de fondo(background), un espacio de relleno(padding), ancho(width) y un margen(margin)
+a las etiquetas que contengan el atributo class="group__title" se les asigna un tipo de fuente(font-family), alineacion del texto[(tex-align), grosor de la letra mediante font-weight, un margen(margin) y un tamaño de letra(font-size)
+las etiquetas con el atributo class="recomendaciones" o "column" se le asigan un margen de boton mediante margin-bottom y alineacion del tecto con tex-align
+a las etiquetas que contengan el atributo class="recomendaciones__img" se les asigna un alto maximo(max-width) y un margen(margin)
+las etiquetas con el atributo class="recomendaciones" o "titulo" se les agrega un tamaño de texto mediante font-size, un espacio de relleno superior(padding-top) y el borde del elemento (pading-bottom)
+a las etiquetas que contengan el atributo class="recomendaciones__prcio" se les asigna un tamaño de letra mediante font-size, un color(color) y un grosor de text(font-weight)
+las etiquetas con el atributo class="main-footer se le agrega un color de fondo(background), un color (color), un espacio de relleno(padding), un espacio de relleno superior(padding-top), tamaño de fuente(font-size) y alineacion del texto(text align)
+a las etiquetas que contengan el atributo class="copy" se les asigna una alineacion del texto(tex-align), un margen(margin) y un margen superior(margin--top)
+las etiquetas con el atributo class="main-footer" con elementos class="icon-" se les asigna un color(color) y se elimina el subrayado del texto con text-decoration
+las etiquetas con el atributo class="main-footer" que sean hijos elementos class="icon-" se les asigna el posicionamiento de los elementos mediante position,top para el desplazamiento superior desde el margen superior y right para el desplazamiento derecho desde el margen
+para la parte responsiva en una pantalla de 480px se utiliza @media screen and (min-width:480px) y dentro de ella se declaran los estilos que tendra cada etiqueta o atributo
+a las etiquetas que contengan el atributo class="logo" se les asigna un color(color) y alineacion del texto(text-align)
+las etiquetas con el atributo class="main-header__contactInfo se le asigna una alineacion del texto
+a las etiquetas que contengan el atributo class="baner" se le asigna un margen superior(margin-top) y z-index para le orden del posicionamiento
+las etiquetas con el atributo class="main-header__contactInfo_telefono" se le asigna un color de fondo(background)
+a las etiquetas que contengan el atributo class="main-header__contactInfo_direccion" se le asigna color(color)
+a las etiquetas que contengan el atributo class="banner_contenido" se le asigna un tamaño de texto con text-align y top para el desplazamiento superior desde el margen superior
+las etiquetas con el atributo class="column--50" se le asigna un ancho_(width)
+a las etiquetas que contengan el atributo class="main-nav" se le asiganun color de fondo con background
+las etiquetas con el atributo class="column--50-25" se le asigna un ancho con width
+a las etiquetas que contengan el atributo class="main_descripcion o "column" y su grupo de hermanos (:nth-child) se le asigna un espacio de relleno izquierdo(padding-left), alineacion del texto(text-align) y un tamaño de fuente(font-size)
+las etiquetas con el atributo class="main_descripcion" o "btn" se le asigana un marge(margin) 
+a las etiquetas que contengan el atributo class="column--33" se le asigna un ancho con width
+las etiquetas con el atributo class="recomendaciones" o "column" se le asigna un borde con border y un espacio de relleno con padding
+a las etiquetas que contengan el atributo class="recomendaciones__img" se le asigna un alto con height y el bjeto se ajusta en relacion al aspecto de la caja con object-fit
+las etiquetas con el atributo class="main" se le asigna un borde del elemento(border-bottom)
+a las etiquetas que contengan el atributo class="main-footer" o "contenedor-flexible" se le asigna unla alineacion de los elementos con align-items
+para la parte responsiva en una pantalla de 768px se utiliza @media screen and (min-width:768px) y dentro de ella se declaran los estilos que tendra cada etiqueta o atributo
+las etiquetas con el atributo class="main_titulo" se le asigna un tamaño de fuente con font-size
+a las etiquetas que contengan el atributo class="main_texto" se le asigna un tamaño de fuente con font-size
+las etiquetas con el atributo class="main_descripcion" se le asigna un margen superior(margin-top)
+a las etiquetas que contengan el atributo class="main_descripcion" o "column--50" y su grupo de hermanos (:nth-child)se les asigna un tamaño de fuente(font-size)
+las etiquetas con el atributo class="main_descripcion", "column--50 y su grupo de hermanos; o "column_txt" se le asigna un alto de linea con line-height
+a las etiquetas que contengan el atributo class="column_title" se le agrega u tamaño de fuente con font-size
+las etiquetas con el atributo class="group_title" se le agrega un tamaño de fuente con font-size
+para la parte responsiva en una pantalla de 820px se utiliza @media screen and (min-width:820px) y dentro de ella se declaran los estilos que tendra cada etiqueta o atributo
+a las etiquetas que contengan el atributo class="column--50-25" se le asigan un ancho con width
+para la parte responsiva en una pantalla de 1024px se utiliza @media screen and (min-width:1024px) y dentro de ella se declaran los estilos que tendra cada etiqueta o atributo
+las etiquetas con el atributo class="logo" se le asigna un tamaño de fuente(font-size), un espacio de relleno(padding) y alineacion del texto(text-align)
+a las etiquetas que contengan el atributo class="banner" se le asigna un margen superior con margin-top
+las etiquetas con el atributo class="main-header__contactInfo_telefono" o "main-header__contactInfo_direccion" se le agrega un tamaño de fuente con font-size
+a las etiquetas que contengan el atributo class="banner_contenido" se le asigna un tamaño de fuente con font-size
+las etiquetas con el atributo class="main-nav" se le asigna un espaciode relleno(padding)
+a las etiquetas que contengan el atributo class="icon-menu" se le añade display para desactivar la visualizacion del elemento
+las etiquetas con el atributo class="menu" se le designa como un elemento flexible, se asigna un alto(height), especifica como estan posisiconados los elementos mediante position, se asigna un ancho(width) y un color de fondo(background)
+a las etiquetas que contengan el atributo class="menu__link" se le asigna un espacio de relleno con padding
+las etiquetas con el atributo class="grupo--color" o "contenedor" se les asigna un margen superior(margin-top), margen del elemento(margin-bottom), un espacio de relleno(padding), color(color), alineacion del texto(text-align y un color de fondo(background)
+a las etiquetas que contengan el atributo class="main_descripcion" o "column" se le asigna un espacio de relleno derecho con padding-right
+las etiquetas con el atributo class="main_titulo" se le asigna tamaño de fuente(font-size)
+a las etiquetas que contengan el atributo class="main_descripcion", "column--50" y su grupo de hermanos(:nth-child); o "column_txt" se le asi un clto de linea(line-height)
+las etiquetas con el atributo class="main-footer" se le asigna un espacio de relleno superior(padding-top) y un espaacio de relleno de elemento(padding-bottom)
+a las etiquetas que contengan el atributo class="banner_img" se le asigna un alto(height)
+las etiquetas con el atributo class="column--33" se le asigna un espacio de relleno(padding), margen derecho(margin-right), margen izquierdo(margin-left), alineacion del texto(text-align) y alineacion de los elementos(align-items)
+a las etiquetas que contengan el atributo class="column_txt2" se les asigna alineacion del texto con align-text
+las etiquetas con el atributo class="main-footer" o "contenedor" se le asigna un margen derecho(margin-right), margen izquierdo(margin-left) y alineacion de los elementos con align-items
+
+
+galeria
+al agregar dos divisiones<div>, teniendo en la primea un titulo con <h2>  y dentro del segundo 4 divisiones<div> en las que contiene dos imagenes cada una.
+
+contactos
+al agregar solo un <div> el cual contendra un titulo con <h2> y una division seccionada en dos partes, la primera es un <div> que contiene un titulo <h3> y 6 parrafos con la etiqueta <p>, la segunda seccion contendra un formulario<form> que contendra 4 secciones <label>, 3 <input>, un <textarea> y un input como boton<input type="submit">

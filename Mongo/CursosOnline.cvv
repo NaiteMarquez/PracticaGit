@@ -1,0 +1,309 @@
+db.programacion.insert({
+"_id":8990,
+"Titulo":"Tutorial de BD ",
+"Contenido del curso":"CReacion de colecciones",
+"Etiquetas":[
+"NoSql",
+"Programacion"
+],
+"Total de horas":30,
+"Fecha de inicio": new Date("2020/03/02"),
+"Fecha de termino": new Date("2020/03/15"),
+"Ponente":{
+"Nombre":"Juan Enrique",
+"Edad":18,
+"Preparacion":"Programer Junior",
+"Usuario":{
+"Nombre":"Oliver",
+"Email":"groliver@gmail.com"
+}
+}
+})
+---------------------------------------------
+db.programacion.insert({
+"_id":8990,
+"Titulo":"Tutorial de android basico",
+"Contenido del curso":"Conexion a BD",
+"Etiquetas":[
+"JSON",
+"SQLite",
+"Java"
+],
+"Total de horas":25,
+"Fecha de inicio": new Date("2020/03/01"),
+"Fecha de termino": new Date("2020/04/10"),
+"Ponente":{
+"Nombre":"Arueth Hernandez",
+"Edad":20,
+"Preparacion":"Programer Señor",
+"Usuario":{
+"Nombre":"Arueth",
+"Email":"arue23@gmail.com"
+}
+}
+})
+----------------------
+db.programacion.insert({
+"_id":8995,
+"Titulo":"Tutorial de PHP",
+"Contenido del curso":"Conexion a BD",
+"Etiquetas":[
+"MySQL",
+"JavaScript",
+"CSS"
+],
+"Total de horas":40,
+"Fecha de inicio": new Date("2020/04/01"),
+"Fecha de termino": new Date("2020/04/30"),
+"Ponente":{
+"Nombre":"Tania Oropeza",
+"Edad":20,
+"Preparacion":"Programer Junior",
+"Usuario":{
+"Nombre":"server ",
+"Email":"ser24@gmail.com"
+}
+}
+})
+---------------------------
+db.programacion.insert({
+"_id":9897,
+"Titulo":"Tutorial de Adobe XD",
+"Contenido del curso":"Diseño de GUI",
+"Etiquetas":[
+"Imagenes",
+"Botones",
+"Capas"
+],
+"Total de horas":35,
+"Fecha de inicio": new Date("2020/04/30"),
+"Fecha de termino": new Date("2020/05/02"),
+"Ponente":{
+"Nombre":"Edgar Barrera",
+"Edad":19,
+"Preparacion":"Designer UX",
+"Usuario":{
+"Nombre":"guiux ",
+"Email":"guiiux24@gmail.com"
+}
+}
+})
+----------------------------
+db.programacion.insert({
+"_id":6732,
+"Titulo":"Tutorial Bulma",
+"Contenido del curso":"Diseño de CSS",
+"Etiquetas":[
+"Imagenes",
+"Botones",
+"Formularios"
+],
+"Total de horas":35,
+"Fecha de inicio": new Date("2020/05/06"),
+"Fecha de termino": new Date("2020/06/02"),
+"Ponente":{
+"Nombre":"Jazmin Serrano",
+"Edad":20,
+"Preparacion":"Programer Junior",
+"Usuario":{
+"Nombre":"uxjax ",
+"Email":"uxjax24@gmail.com"
+}
+}
+})
+--------------------
+db.programacion.insert({
+"_id":4521,
+"Titulo":"SQL Server nivl medio",
+"Contenido del curso":"DDL Y DML",
+"Etiquetas":[
+"Store Procedure",
+"Views",
+"Triggers",
+"Functions"
+],
+"Total de horas":40,
+"Fecha de inicio": new Date("2020/05/03"),
+"Fecha de termino": new Date("2020/06/15"),
+"Ponente":{
+"Nombre":"Mario Villeda",
+"Edad":20,
+"Preparacion":"BDA",
+"Usuario":{
+"Nombre":"dbilce ",
+"Email":"dbilce@gmail.com"
+}
+}
+})
+------------------
+db.programacion.insert({
+"_id":6754,
+"Titulo":"SQL Server nivl medio",
+"Contenido del curso":"DDL Y DML",
+"Etiquetas":[
+"Store Procedure",
+"Views",
+"Triggers",
+"Functions"
+],
+"Total de horas":40,
+"Fecha de inicio": new Date("2020/06/05"),
+"Fecha de termino": new Date("2020/07/15"),
+"Ponente":{
+"Nombre":"Miguel Perez",
+"Edad":20,
+"Preparacion":["BDA", "Programer"],
+"Usuario":{
+"Nombre":"dbmike ",
+"Email":"mike@gmail.com"
+}
+}
+})
+-------------------
+db.programacion.insert({
+"_id":2345,
+"Titulo":"Oracle nivel medio",
+"Contenido del curso":"DDL Y DML",
+"Etiquetas":[
+"Store Procedure",
+"Views",
+"Triggers",
+"Functions"
+],
+"Total de horas":30,
+"Fecha de inicio": new Date("2020/07/06"),
+"Fecha de termino": new Date("2020/08/10"),
+"Ponente":{
+"Nombre":"Francisco Lopez",
+"Edad":19,
+"Preparacion":"Master Data Base",
+"Usuario":{
+"Nombre":"dbchino",
+"Email":"chino@gmail.com"
+}
+}
+})
+db.programacion.insert({
+"_id":8721,
+"Titulo":"Oracle nivel medio",
+"Contenido del curso":"DDL Y DML",
+"Etiquetas":[
+"Store Procedure",
+"Views",
+"Triggers",
+"Functions"
+],
+"Total de horas":30,
+"Fecha de inicio": new Date("2020/07/06"),
+"Fecha de termino": new Date("2020/08/10"),
+"Ponente":{
+"Nombre":"Francisco Lopez",
+"Edad":19,
+"Preparacion":"Master Data Base",
+"Usuario":{
+"Nombre":"dbchino",
+"Email":"chino@gmail.com"
+}
+}
+})
+-------------------------
+db.programacion.insert({
+"_id":9999,
+"Titulo":"Redes LAN",
+"Contenido del curso":"Cofiguracion de redes",
+"Etiquetas":[
+"Switch",
+"Router",
+"PC",
+"Serial",
+"Interface Ethernet"
+],
+"Total de horas":15,
+"Fecha de inicio": new Date("2020/03/07"),
+"Fecha de termino": new Date("2020/03/30"),
+"Ponente":{
+"Nombre":"Yeymy Romero",
+"Edad":23,
+"Preparacion":"Certificacion CISCO",
+"Usuario":{
+"Nombre":"networkyey",
+"Email":"netyey@gmail.com"
+}
+}
+})
+********************1
+db.programacion.find({$and: [{"Fecha de inicio": {$gte: new Date("2020-03-01")}},
+{"Fecha de termino": {$lte: new Date("2020-03-30")}}]},{"Ponente.Nombre":1,
+"Titulo":1,"Total de horas":1})
+*******************3
+db.programacion.find({$or:[{"Total de horas":25},{"Total de horas":40},{"Total de horas":35},
+{$and:[{"Fecha de inicio": {$gte: new Date("2020-05-05T00:00:00.000Z")}},{"Fecha de termino":
+{$lte: new Date("2020-07-15T23:59:59.999Z")}}]}]},{})
+**********************4
+db.programacion.find({"Contenido del curso":"DDL y DML"},{"Ponente.Nombre":1,"Ponente.Edad":1,
+"Ponente.Preparacion":1,"Total de horas":1})
+*********************5
+db.programacion.update({
+_id:9999
+},{
+$set: {
+"Etiquetas":[
+"Switch",
+"Router",
+"PC",
+"Serial",
+"Interface Ethernet",
+"Seguridad de puertos"
+]
+}
+})
+**********************6
+db.programacion.insert({
+"Titulo":"VLAN",
+"Contenido del curso":"Configuracion de redes VLAN",
+"Etiquetas":[
+"Switch",
+"Router",
+"PC",
+"Serial",
+],
+"Total de horas":30,
+"Fecha de inicio":new Date("2020/03/08"),
+"Fecha de termino":new Date("2020-04-12"),
+"Ponente":{
+"Nombre":"Saul Torres",
+"Edad":23,
+"Preparacion":"Certificacion CISCO CNNA2",
+"Usuario":{
+"Nombre":"networLAN",
+"Email":"lansaul@mail.com"
+},
+"Contacto":{
+"Celular":2324343,
+"Facebook":"Saul Torres"
+}
+}
+})
+******************7
+db.programacion.find({$or:[{"Poniente.Edad":{$gt:25}},
+{"Total de horas":{$gt:20}}]},{"Total de horas":1,"Etiquetas":1})
+***********************8
+db.programacion.find({
+"Ponente.Preparacion":"Certificacion CISCO"},{"Ponente.Nombre":1,
+"Ponente.Usuario.Email":1})
+************************9
+db.programacion.find({
+"Etiquetas":"Store Procedure",
+"Etiquetas":"Views"
+},{
+"Titulo":1,
+"Etiquetas":1
+})
+***************10
+db.programacion.find({
+$and: [{"Fecha de inicio": {$gte: new Date("2020-03-01")}},
+{"Fecha de termino": {$lte: new Date("2020-03-30")}}]},{
+"Titulo":1,
+"Etiquetas":1,
+"Total de horas":1
+})

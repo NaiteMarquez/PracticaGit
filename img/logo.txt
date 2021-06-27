@@ -1,0 +1,10 @@
+dentro de nuestro logo utilizamos el color azul ya que representa la resposabilidad del equipo ademas de inteligencia para la creacion de las nuevas aplicaciones.
+hacemos uso del color gris que es simbolo del exito. En cuanto a lo visual añadimos un reloj en el cual solo estan ceros y unos que son el lenguaje de las computadoras,
+este reloj hace que la estabilidad visual se centre en el ya que aludimos a nuestro eslogan "herramienta software del mañana". agregamos un ";" al final que es la terminacion de
+sintaxis dentro de la programacion en la mayoria de los lenguajes
+
+documentador: se encarga principalmente de la documentacion quie debe estar relacionada y creada conforme a la creacion del proyecto.
+diseñadora: se encarga principalmente de todo lo visual del proyecto
+lider: es quien se encarga de coordinar el trabajo en equipo ademas de hacer aportaciones en cada uno de los ambitos
+analista: se encarga de analizar y recompilar los datos necesarios para la creacion y supervision del proyecto
+rogramador es quien se encarga de la parte de codificacion del proyecto
